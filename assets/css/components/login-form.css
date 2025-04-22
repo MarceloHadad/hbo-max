@@ -1,0 +1,73 @@
+.content {
+	height: 80%;
+}
+
+.login__body {
+	background-image: url("../../images/background-movies-series.png");
+	background-size: cover;
+	height: 100vh;
+}
+
+.login__form {
+	background-color: var(--form-bg-color);
+	text-align: center;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 2.5rem;
+	border-radius: 0.5rem;
+	width: 100%;
+	max-width: 800px;
+}
+
+.login__title {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+
+.login__label {
+	text-align: left;
+}
+
+.login__field {
+	background: var(--form-field-bg-color);
+	border: var(--form-field-border);
+	color: var(--text-color);
+	padding: 1rem;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+}
+
+.login__actions {
+	text-align: left;
+	margin-top: 1rem;
+}
+
+.login__actions button {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.login__link {
+	font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+	.login__field {
+		font-size: 1.1rem;
+	}
+
+	.login__actions button {
+		display: inline;
+	}
+
+	.login__link {
+		margin-left: 1rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.login__form {
+		margin: auto;
+	}
+}
