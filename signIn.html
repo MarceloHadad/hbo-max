@@ -1,1 +1,93 @@
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Entrar | HBO Max</title>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body class="login__body">
+		<nav class="nav-menu flex-container">
+			<section class="nav-menu__logo">
+				<a href="index.html">
+					<img
+						src="./assets/images/hbo-logo.svg"
+						alt="hbo-logo"
+						class="nav-menu__logo-image"
+					/>
+				</a>
+			</section>
+			<section>
+				<a href="signIn.html" class="nav-menu__item">Entrar</a>
+				<a href="#subscription" class="nav-menu__item nav-menu__button"
+					>Assine agora</a
+				>
+			</section>
+		</nav>
+		<main class="content flex-container">
+			<form class="login__form flex-container">
+				<h1 class="login__title">Entrar</h1>
+				<label class="login__label"> Você tem uma conta da HBO Max? </label>
+				<input
+					class="login__field"
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Endereço de e-mail"
+				/>
+				<input
+					class="login__field"
+					type="password"
+					name="password"
+					id="password"
+					placeholder="Senha"
+					minlength="8"
+				/>
+				<div class="login__actions">
+					<button type="submit" class="button button--gradient">Entrar</button>
+					<a href="#" class="login__link"> Esqueceu a senha? </a>
+				</div>
+			</form>
+		</main>
+		<footer class="flex-container">
+			<section class="footer__quick-links flex-container">
+				<a class="footer__link" href="https://www.max.com/br/pt/sitemap">
+					Agora na Max
+				</a>
+				<a class="footer__link" href="https://www.max.com/br/pt/movies">
+					Filme em destaque
+				</a>
+				<a class="footer__link" href="https://www.max.com/br/pt/shows"
+					>Séries</a
+				>
+				<a class="footer__link" href="https://help.max.com/br">Ajuda</a>
+			</section>
+			<section class="footer__legal">
+				<p>
+					©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos
+					reservados. Max é usado sob licença.
+				</p>
+			</section>
+			<section class="footer__social flex-container">
+				<a
+					href="https://www.facebook.com/StreamMaxBR"
+					class="footer__social-link"
+				>
+					<img src="assets/images/fb_0.png" alt="Facebook" />
+				</a>
+				<a
+					href="https://www.instagram.com/StreamMaxBR"
+					class="footer__social-link"
+				>
+					<img src="assets/images/instagram_0.png" alt="Instagram" />
+				</a>
+				<a
+					href="https://www.youtube.com/@StreamMaxBR"
+					class="footer__social-link"
+				>
+					<img src="assets/images/youtube_0.png" alt="Youtube" />
+				</a>
+			</section>
+		</footer>
+	</body>
+</html>

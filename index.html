@@ -1,1 +1,212 @@
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HBO Max</title>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body>
+		<nav class="nav-menu flex-container">
+			<section class="nav-menu__logo">
+				<a href="index.html">
+					<img
+						src="./assets/images/hbo-logo.svg"
+						alt="hbo-logo"
+						class="nav-menu__logo-image"
+					/>
+				</a>
+			</section>
+			<section>
+				<a href="signIn.html" class="nav-menu__item">Entrar</a>
+				<a href="#subscription" class="nav-menu__item nav-menu__button"
+					>Assine agora</a
+				>
+			</section>
+		</nav>
+		<header class="header">
+			<section class="header__content flex-container">
+				<section class="header__channels flex-container">
+					<img class="header__channel" src="assets/images/hbo.png" alt="HBO" />
+					<img class="header__channel" src="assets/images/dc.png" alt="DC" />
+					<img
+						class="header__channel"
+						src="assets/images/wb.png"
+						alt="Warner Bross"
+					/>
+					<img
+						class="header__channel"
+						src="assets/images/cartoon-network_neutral.png"
+						alt="Cartoon Network"
+					/>
+					<img
+						class="header__channel"
+						src="assets/images/max_originals.png"
+						alt="Max Originals"
+					/>
+				</section>
+				<section class="header__title flex-container">
+					<span class="header__title--light">Curta as melhores histórias</span>
+					<span class="header__title--bold">para todo mundo</span>
+				</section>
+				<section class="divider"></section>
+				<section class="header__pricing">
+					<p>Assinaturas a partir de</p>
+					<p class="header__pricing--price">
+						R$14,15
+						<span class="header__pricing--small">/mês*</span>
+					</p>
+				</section>
+				<a
+					href="#subscription"
+					class="button button--gradient header__subscription__button"
+					>Assine agora</a
+				>
+				<section class="header__disclaimer">
+					*aplicável ao plano anual com o pagamento antecipado.
+				</section>
+			</section>
+		</header>
+		<main>
+			<section id="subscription" class="subscription flex-container">
+				<h2 class="subscription__title">
+					Conheça nossos planos e economize na assinatura trimestral ou anual
+					com o pagamento antecipado.
+				</h2>
+				<section class="subscription__plans flex-container">
+					<article class="subscription__plan flex-container">
+						<header class="subscription__plan__header flex-container">
+							<h3 class="subscription__plan__title">Mobile</h3>
+							<p class="subscription__plan__price">
+								<span>R$ 19,90</span> /mês
+							</p>
+						</header>
+						<ul class="subscription__features flex-container">
+							<li>Aproveite em smartphones e tablets, onde quiser.</li>
+							<li>Assista em 1 tela por vez.</li>
+							<li>
+								Tenha conteúdo em resolução adaptada para cada dispositivo.
+							</li>
+							<li>
+								Baixe suas séries e filmes favoritos, assista onde e quando
+								quiser.
+							</li>
+						</ul>
+						<footer class="subscription__plan--button button button--gradient">
+							Escolher o plano Mobile
+						</footer>
+					</article>
+					<article class="subscription__plan flex-container">
+						<header class="subscription__plan__header flex-container">
+							<h3 class="subscription__plan__title">Multitelas</h3>
+							<p class="subscription__plan__price">
+								<span>R$ 27,90</span> /mês
+							</p>
+						</header>
+						<ul class="subscription__features flex-container">
+							<li>Aproveite em todos os seus dispositivos.</li>
+							<li>Chromecast e Airplay disponíveis.</li>
+							<li>Assista em até 3 telas ao mesmo tempo.</li>
+							<li>Tenha conteúdo em alta definição, com qualidade 4K.</li>
+							<li>
+								Baixe suas séries e filmes favoritos, assista onde e quando
+								quiser.
+							</li>
+							<li>Crie até 5 perfis diferentes.</li>
+						</ul>
+						<footer class="subscription__plan--button button button--gradient">
+							Escolher o plano Multitelas
+						</footer>
+					</article>
+				</section>
+			</section>
+			<section class="contents flex-container container">
+				<h2 class="contents__title">Descubra novos universos</h2>
+				<section class="contents__gallery grid-container">
+					<figure class="contents__gallery-item">
+						<img
+							src="assets/images/hbo-default_0.webp"
+							alt="HBO"
+							class="contents__gallery-image"
+						/>
+					</figure>
+					<figure class="contents__gallery-item">
+						<img
+							src="assets/images/MAX-Default.webp"
+							alt="Max"
+							class="contents__gallery-image"
+						/>
+					</figure>
+					<figure class="contents__gallery-item">
+						<img
+							src="assets/images/DC_Default.webp"
+							alt="Max"
+							class="contents__gallery-image"
+						/>
+					</figure>
+					<figure class="contents__gallery-item">
+						<img
+							src="assets/images/WB-Default.webp"
+							alt="Max"
+							class="contents__gallery-image"
+						/>
+					</figure>
+					<figure class="contents__gallery-item">
+						<img
+							src="assets/images/CN-Default.webp"
+							alt="Max"
+							class="contents__gallery-image"
+						/>
+					</figure>
+					<figure class="contents__gallery-item">
+						<img
+							src="assets/images/UCL-Default.webp"
+							alt="Max"
+							class="contents__gallery-image"
+						/>
+					</figure>
+				</section>
+			</section>
+		</main>
+		<footer class="flex-container">
+			<section class="footer__quick-links flex-container">
+				<a class="footer__link" href="https://www.max.com/br/pt/sitemap">
+					Agora na Max
+				</a>
+				<a class="footer__link" href="https://www.max.com/br/pt/movies">
+					Filme em destaque
+				</a>
+				<a class="footer__link" href="https://www.max.com/br/pt/shows"
+					>Séries</a
+				>
+				<a class="footer__link" href="https://help.max.com/br">Ajuda</a>
+			</section>
+			<section class="footer__legal">
+				<p>
+					©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos
+					reservados. Max é usado sob licença.
+				</p>
+			</section>
+			<section class="footer__social flex-container">
+				<a
+					href="https://www.facebook.com/StreamMaxBR"
+					class="footer__social-link"
+				>
+					<img src="assets/images/fb_0.png" alt="Facebook" />
+				</a>
+				<a
+					href="https://www.instagram.com/StreamMaxBR"
+					class="footer__social-link"
+				>
+					<img src="assets/images/instagram_0.png" alt="Instagram" />
+				</a>
+				<a
+					href="https://www.youtube.com/@StreamMaxBR"
+					class="footer__social-link"
+				>
+					<img src="assets/images/youtube_0.png" alt="Youtube" />
+				</a>
+			</section>
+		</footer>
+	</body>
+</html>
