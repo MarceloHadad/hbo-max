@@ -1,0 +1,109 @@
+.subscription {
+	flex-direction: column;
+	padding: 1rem;
+	text-align: center;
+}
+
+.subscription__title {
+	font-size: 2rem;
+}
+
+.subscription__plans {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 80px;
+	margin: 40px 0;
+	perspective: 2000px;
+	perspective-origin: top;
+	max-width: 1200px;
+	padding: 0 1rem;
+}
+
+.subscription__plan {
+	background: var(--card-bg-color);
+	padding: 2rem 4rem;
+	border-radius: 0.5rem;
+	min-height: 38rem;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: transform 1s ease-in-out;
+}
+
+.subscription__plans:has(.subscription__plan:nth-child(1):hover)
+	.subscription__plan:nth-child(2) {
+	transform: rotateY(-45deg);
+}
+
+.subscription__plans:has(.subscription__plan:nth-child(2):hover)
+	.subscription__plan:nth-child(1) {
+	transform: rotateY(45deg);
+}
+
+.subscription__plan__title {
+	font-size: 1.5rem;
+}
+
+.subscription__plan__price span {
+	color: var(--secondary-color);
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.subscription__features {
+	flex-direction: column;
+	gap: 1rem;
+	margin: 1rem 0;
+	text-align: start;
+}
+
+.subscription__features li {
+	padding-left: 1rem;
+	list-style: none;
+}
+
+.subscription__features li::marker {
+	content: "+";
+	font-size: 2rem;
+	margin: 0 8px 0 0;
+}
+
+.subscription__plan--button {
+	margin-top: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.subscription {
+		background: url("../../images/background-movies-series.png") no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	.subscription__plan__header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.subscription__plan__price span {
+		font-size: 2rem;
+	}
+
+	.subscription__features {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.subscription__title {
+		text-align: center;
+		font-size: 2.8rem;
+		font-weight: 500;
+	}
+
+	.subscription__plans {
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 4rem;
+		margin: 2.5rem auto;
+	}
+}
